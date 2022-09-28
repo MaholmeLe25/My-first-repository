@@ -1,0 +1,183 @@
+body {
+    background-image: url(Fundo.jpg.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 80px 800px 200px;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: header;  
+    font-size: 22px;
+ 
+}
+
+#image-profile{
+    width: 500px;
+}
+
+.main{
+    grid-area: main;
+ 
+}
+
+.aside{
+  
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer{
+ 
+    display: flex;
+    grid-area: footer;
+    background-color: gray;
+}
+
+
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  
+}
+.medias-container{
+  
+    width: 400px;
+    height: 100%;
+}
+
+header, main, aside, footer{
+    color: white;
+}
+
+#aside{
+    text-align: center;
+    font-size: 18px;
+}
+
+#footer1{
+}
+
+#footer2{
+    text-align: left;
+    font-size: 26px;
+}
+
+#footer3{
+    text-align: left;
+    font-size: 26px;
+}
+
+#paragrafo1{
+    text-align: center;
+    font-size: 26px;
+}
+
+#paragrafo2{
+    text-align: left;
+    font-size: 24px;
+}
+
+#profile{
+    width: 500px;
+}
+
+#Whats{
+    width: 200px;
+}
+
+.barras{
+    width: 250px;
+    height: 45px;
+ 
+    margin: 10px 0 10px 0;
+    position: relative;
+    background-color: #ababab;
+}
+
+.progresso{
+
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff;
+    color: black;
+}
+
+@media (max-width: 480px){
+
+    body{
+    
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 800px 400px 280px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer";
+    }
+
+    .header, .main, .aside, .footer{
+        min-width: 380px;
+    }
+
+    #image-profile{
+        width: 100%;
+        min-width: 380px;
+    }
+}
+
+#barras1{
+    background-color: orangered;
+}
+
+#barras2{
+    background-color: blue;
+}
+
+#barras3{
+    background-color: yellow;
+}
+
+#barras4{
+    background-color: darkviolet;
+}
+
+#progresso1{
+    background-color: orange;
+}
+
+#progresso2{
+    background-color: aqua;
+}
+
+#progresso3{
+    background-color: gold;
+}
+
+#progresso4{
+    background-color: purple;
+}
